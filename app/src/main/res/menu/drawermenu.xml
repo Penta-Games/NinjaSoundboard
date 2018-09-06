@@ -9,12 +9,12 @@
         android:layout_marginTop="10dp"
         android:icon="@drawable/soundicon" />
 
-    <item android:title="App teilen"
+    <item android:title="Share app"
         android:id="@+id/teilen"
         android:layout_marginTop="10dp"
         android:icon="@drawable/shareimg" />
 
-    <item android:title="Impressum"
+    <item android:title="Imprint"
         android:id="@+id/rechtliches"
         android:layout_marginTop="10dp"
         android:icon="@drawable/gesetzt" />

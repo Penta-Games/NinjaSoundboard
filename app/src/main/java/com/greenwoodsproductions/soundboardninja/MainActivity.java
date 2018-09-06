@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent shareIntent = new Intent(Intent.ACTION_SEND);
                     shareIntent.setType("text/plain");
                     shareIntent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.greenwoodsproductions.soundboardninja");
-                    startActivity(Intent.createChooser(shareIntent,  "Teilen über..."));
+                    startActivity(Intent.createChooser(shareIntent,  "Share via..."));
                 }
 
 
@@ -146,14 +146,14 @@ public class MainActivity extends AppCompatActivity {
                     AlertDialog.Builder a_builder = new AlertDialog.Builder(MainActivity.this);
                     a_builder.setMessage(R.string.rechtliches)
                             .setCancelable(true)
-                            .setNegativeButton("Verstanden", new DialogInterface.OnClickListener() {
+                            .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int i) {
                                     dialog.cancel();
                                 }
                             });
                     AlertDialog alert = a_builder.create();
-                    alert.setTitle("Impressum");
+                    alert.setTitle("Imprint");
                     alert.show();
                 }
 
@@ -214,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
                 mp = null;
             } catch (Exception e) {
                 e.printStackTrace();
-                Toast.makeText(MainActivity.this, "Ein Fehler ist aufgetreten, versuche die App neu zu starten.", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Something went wrong, please try to restart the application.", Toast.LENGTH_LONG).show();
 
             }
         }

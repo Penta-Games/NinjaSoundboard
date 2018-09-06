@@ -103,7 +103,7 @@ File directory;
                 position=pos;
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(getContext(), android.R.style.Theme_Material_Light_Dialog_Alert);
-                builder.setItems(new CharSequence[]{"share", "set as..."}, new DialogInterface.OnClickListener(){
+                builder.setItems(new CharSequence[]{"Share", "Set as..."}, new DialogInterface.OnClickListener(){
 
                     @Override
                     public void onClick(DialogInterface dialog, int which){
@@ -125,7 +125,7 @@ File directory;
                                     Intent share = new Intent(Intent.ACTION_SEND);
                                     share.putExtra(Intent.EXTRA_STREAM, Uri.parse(Environment.getExternalStorageDirectory().toString() + "/" + R.string.foldername + "/" + items1[position] + ".mp3"));
                                     share.setType("audio/mp3");
-                                    startActivity(Intent.createChooser(share, "share via..."));
+                                    startActivity(Intent.createChooser(share, "Share via..."));
                                 }
                                 break;
 
